@@ -1,6 +1,7 @@
 /**
  * created by luke whitaker <lawhitak@mtu.edu>
  * Creates a menu of all possible hot dogs.
+ * 
  */
 public class HotDog {
 
@@ -20,7 +21,7 @@ public class HotDog {
       int[] prices = {15, 17, 20, 25, 30, 35, 45};
 
       // Keep track of the number of combinations.
-      long count = 0;
+      long count =0;
 
       // Go through all 128 possible combinations.
       for (int i = 0; i < 128; i++) {
@@ -47,7 +48,7 @@ public class HotDog {
 
          // Print the hot dog and its price.
          System.out.printf("%3d %-75s $%.2f%n",
-               count, menu, total / 100.0);
+               count + 1, menu, total / 100.0);
 
          // Increase the combination count by 1.
          count++;
@@ -67,7 +68,7 @@ public class HotDog {
 
       // Print the menu and gets combo count.
       long count = hotdog.printMenu();
-for
+
       // sees if there are 128 options.
       assert count == 128;
    }
